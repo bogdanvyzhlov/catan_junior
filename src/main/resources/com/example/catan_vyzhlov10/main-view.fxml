@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.catan_vyzhlov10.MainController">
+   <children>
+      <ImageView fitHeight="532.0" fitWidth="809.0" layoutY="-16.0">
+         <image>
+            <Image url="@pictures/pole_hry.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="703.0" prefHeight="500.0" prefWidth="182.0" style="-fx-background-color: #ff9900;">
+         <children>
+            <HBox prefHeight="26.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="175.0" text="                SCORE" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="25.0" prefWidth="182.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="143.0" text="                Blue player">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="textBlue" accessibleRole="TEXT_AREA" alignment="CENTER" editable="false" onMouseClicked="#printBlue" prefHeight="59.0" prefWidth="182.0" text="Stiskni aby zjistit pocet bodu">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextField>
+            <HBox prefHeight="25.0" prefWidth="182.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="181.0" text="            Yellow player">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefHeight="0.0" prefWidth="182.0" />
+            <TextField fx:id="textYellow" alignment="CENTER" editable="false" onMouseClicked="#printYellow" prefHeight="57.0" prefWidth="182.0" text="Stiskni aby zjistit pocet bodu">
+               <font>
+                  <Font size="12.0" />
+               </font></TextField>
+            <HBox prefHeight="25.0" prefWidth="182.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="180.0" text="        Game Information">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <TextArea fx:id="textMessage" editable="false" prefHeight="185.0" prefWidth="182.0" text="Vítejte ve hře, nejprve rozhodnout, jakou barvu máte, pak klikněte na kostku a získat zdroje, pak můžete vytvořit zámek na hrncích kartyVítejte ve hře, nejprve rozhodnout, jakou barvu máte, pak klikněte na kostku a získat zdroje, pak můžete vytvořit zámek na hrncích karty" wrapText="true" />
+            <Label text="Press kubik">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="kube" fitHeight="60.0" fitWidth="60.0" onMouseClicked="#drawKube" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fx:id="castleId18" fitHeight="40.0" fitWidth="40.0" layoutX="161.0" layoutY="185.0" onMouseClicked="#clickCard18" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId16" fitHeight="40.0" fitWidth="40.0" layoutX="100.0" layoutY="139.0" onMouseClicked="#clickCard16" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId19" fitHeight="40.0" fitWidth="40.0" layoutX="161.0" layoutY="276.0" onMouseClicked="#clickCard19" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId2" fitHeight="40.0" fitWidth="40.0" layoutX="100.0" layoutY="323.0" onMouseClicked="#clickCard2" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId1" fitHeight="40.0" fitWidth="40.0" layoutX="46.0" layoutY="276.0" onMouseClicked="#clickCard1" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId0" fitHeight="40.0" fitWidth="40.0" layoutX="46.0" layoutY="185.0" onMouseClicked="#clickCard0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId15" fitHeight="40.0" fitWidth="40.0" layoutX="219.0" layoutY="48.0" onMouseClicked="#clickCard15" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId17" fitHeight="40.0" fitWidth="40.0" layoutX="219.0" layoutY="139.0" onMouseClicked="#clickCard17" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId22" fitHeight="40.0" fitWidth="40.0" layoutX="281.0" layoutY="185.0" onMouseClicked="#clickCard22" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId21" fitHeight="40.0" fitWidth="40.0" layoutX="281.0" layoutY="276.0" onMouseClicked="#clickCard21" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId20" fitHeight="40.0" fitWidth="40.0" layoutX="219.0" layoutY="323.0" onMouseClicked="#clickCard20" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId3" fitHeight="40.0" fitWidth="40.0" layoutX="219.0" layoutY="414.0" onMouseClicked="#clickCard3" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId4" fitHeight="40.0" fitWidth="40.0" layoutX="281.0" layoutY="454.0" onMouseClicked="#clickCard4" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId5" fitHeight="40.0" fitWidth="40.0" layoutX="341.0" layoutY="414.0" onMouseClicked="#clickCard5" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId24" fitHeight="40.0" fitWidth="40.0" layoutX="341.0" layoutY="323.0" onMouseClicked="#clickCard24" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId25" fitHeight="40.0" fitWidth="40.0" layoutX="403.0" layoutY="276.0" onMouseClicked="#clickCard25" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId26" fitHeight="40.0" fitWidth="40.0" layoutX="403.0" layoutY="185.0" onMouseClicked="#clickCard26" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId23" fitHeight="40.0" fitWidth="40.0" layoutX="341.0" layoutY="139.0" onMouseClicked="#clickCard23" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId6" fitHeight="40.0" fitWidth="40.0" layoutX="403.0" layoutY="454.0" onMouseClicked="#clickCard6" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId7" fitHeight="40.0" fitWidth="40.0" layoutX="464.0" layoutY="414.0" onMouseClicked="#clickCard7" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId31" fitHeight="40.0" fitWidth="40.0" layoutX="464.0" layoutY="323.0" onMouseClicked="#clickCard31" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId29" fitHeight="40.0" fitWidth="40.0" layoutX="522.0" layoutY="276.0" onMouseClicked="#clickCard29" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId8" fitHeight="40.0" fitWidth="40.0" layoutX="587.0" layoutY="323.0" onMouseClicked="#clickCard8" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId9" fitHeight="40.0" fitWidth="40.0" layoutX="641.0" layoutY="276.0" onMouseClicked="#clickCard9" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId28" fitHeight="40.0" fitWidth="40.0" layoutX="522.0" layoutY="185.0" onMouseClicked="#clickCard28" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId27" fitHeight="40.0" fitWidth="40.0" layoutX="464.0" layoutY="139.0" onMouseClicked="#clickCard27" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId12" fitHeight="40.0" fitWidth="40.0" layoutX="464.0" layoutY="48.0" onMouseClicked="#clickCard12" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId13" fitHeight="40.0" fitWidth="40.0" layoutX="403.0" onMouseClicked="#clickCard13" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId30" fitHeight="40.0" fitWidth="40.0" layoutX="341.0" layoutY="48.0" onMouseClicked="#clickCard30" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId11" fitHeight="40.0" fitWidth="40.0" layoutX="587.0" layoutY="139.0" onMouseClicked="#clickCard11" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId10" fitHeight="40.0" fitWidth="40.0" layoutX="641.0" layoutY="185.0" onMouseClicked="#clickCard10" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="castleId14" fitHeight="40.0" fitWidth="40.0" layoutX="281.0" onMouseClicked="#clickCard14" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
